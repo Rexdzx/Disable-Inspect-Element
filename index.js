@@ -8,7 +8,7 @@ function disable(e, keyCode) {
 // f12, ctrl+u, ctrl+shift+i, console
 
 document.onkeydown = (e) => {
-    if (event.keyCode === 123 || disable(e, 'I') || disable(e, 'J') || disable(e, 'C') || disable(e, 'K') || (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)))
+    if (event.keyCode === 123 || disable(e, 'I') || disable(e, 'J') || disable(e, 'C') || disable(e, 'K') || e.shiftKey === 116 || (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)))
 
         return false;
 }
